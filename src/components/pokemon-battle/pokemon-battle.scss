@@ -1,0 +1,375 @@
+:host {
+  .principal {
+    background: url('../../utils/images/fondo.jpg');
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    a{
+      font-family: 'Press Start 2P', cursive;
+      color: #eaa821;
+    }
+    .header {
+      h2 {
+        text-align: center;
+        font-family: 'Press Start 2P', cursive;
+        color: #eaa821;
+      }
+    }
+    .contenedor-personajes {
+      display: flex;
+      flex-direction: column;
+      flex-flow: row;
+      border: solid;
+      border-radius: 10px;
+      background: url('https://image.freepik.com/free-vector/versus-vs-fight-battle-screen-background_1017-23762.jpg');
+      background-size: 100% 100%;
+      width: 70%;
+      height: 70%;
+      .personaje {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        flex-flow: column;
+        align-items: center;
+        &--img {
+          img {
+            height: 225px;
+          }
+        }
+        &--hp {
+          -webkit-box-shadow: 0px 0px 27px 6px rgba(0, 0, 0, 0.98);
+          box-shadow: 0px 0px 27px 6px rgba(0, 0, 0, 0.98);
+          display: flex;
+          flex-flow: column;
+          background: white;
+          padding: 10px;
+          border-radius: 10px;
+          .life {
+            font-family: 'Press Start 2P', cursive;
+            color: #eaa821;
+            background: #3d513c;
+            border-radius: 6px;
+            span {
+              font-size: 12px;
+            }
+            progress {
+              max-width: 100%;
+              max-height: 100%;
+              border: 1px solid #ccc;
+              margin: 4px 6px;
+              background: #dedede;
+              background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#e9e9e9));
+              background: -moz-linear-gradient(top, #ccc, #e9e9e9);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#e9e9e9');
+
+              -moz-box-shadow: 0 1px 0 #fff;
+              -webkit-box-shadow: 0 1px 0 #fff;
+              box-shadow: 0 1px 0 #fff;
+
+              -moz-border-radius: 4px;
+              -webkit-border-radius: 4px;
+              border-radius: 4px;
+            }
+          }
+          span {
+            text-transform: capitalize;
+            font-weight: 700;
+            padding-right: 3px;
+          }
+        }
+      }
+
+      .com {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        align-items: center;
+        &--img {
+          padding-bottom: 2rem;
+          img {
+            height: 180px;
+          }
+        }
+        &--hp {
+          -webkit-box-shadow: 0px 0px 27px 6px rgba(0, 0, 0, 0.98);
+          box-shadow: 0px 0px 27px 6px rgba(0, 0, 0, 0.98);
+          background: white;
+          padding: 10px;
+          border-radius: 10px;
+          display: flex;
+          flex-flow: column;
+          .life {
+            font-family: 'Press Start 2P', cursive;
+            color: #eaa821;
+            background: #3d513c;
+            border-radius: 6px;
+            span {
+              font-size: 12px;
+            }
+            progress {
+              max-width: 100%;
+              max-height: 100%;
+              border: 1px solid #ccc;
+              margin: 4px 6px;
+              background: #dedede;
+              background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#e9e9e9));
+              background: -moz-linear-gradient(top, #ccc, #e9e9e9);
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#e9e9e9');
+
+              -moz-box-shadow: 0 1px 0 #fff;
+              -webkit-box-shadow: 0 1px 0 #fff;
+              box-shadow: 0 1px 0 #fff;
+
+              -moz-border-radius: 4px;
+              -webkit-border-radius: 4px;
+              border-radius: 4px;
+            }
+          }
+        }
+
+        &--damage {
+          color: white;
+          text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+          font-weight: 500;
+          font-size: 26px;
+          animation: attack 1s 2 alternate;
+        }
+        &--none {
+          display: none;
+        }
+        span {
+          text-transform: capitalize;
+          font-weight: 700;
+          padding-right: 3px;
+        }
+      }
+    }
+  }
+
+  .opciones {
+    width: 70%;
+    border: solid;
+    border-top: hidden;
+    height: 75px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    font-family:'Press Start 2P', cursive;
+    &--text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      &.visible {
+        width: 65%;
+      }
+
+      &.hidde {
+        width: 100%;
+      }
+    }
+    &--buttons {
+      width: 35%;
+      button {
+        box-shadow: inset 0px 1px 0px 0px #cf866c;
+        background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+        background-color: #d0451b;
+        border-radius: 5px;
+        border: 1px solid #942911;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 9px;
+        text-shadow: 0px 1px 0px #eb6932;
+        width: 50%;
+        height: 50%;
+        text-transform: capitalize;
+      }
+      button:hover {
+        background: linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+        background-color: #bc3315;
+      }
+      button:active {
+        position: relative;
+        top: 1px;
+      }
+
+      &.visible {
+      }
+
+      &.hidde {
+        display: none;
+      }
+    }
+  }
+
+  @keyframes attack {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    100% {
+      transform: translateY(-1rem) scale(1.1);
+    }
+  }
+
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-0.5px, 0, 0);
+    }
+
+    20%,
+    80% {
+      transform: translate3d(0.5px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-0.5px, 0, 0);
+    }
+
+    40%,
+    60% {
+      transform: translate3d(0.5px, 0, 0);
+    }
+  }
+
+  .modal-header {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Press Start 2P', cursive;
+    color: #eaa821;
+    font-size: 12px;
+    border-bottom: solid;
+    border-width: 1px;
+  }
+
+  .close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    height: 16px;
+    text-decoration: none;
+    width: 16px;
+
+    svg {
+      width: 16px;
+    }
+  }
+
+  .modal-none {
+    display: none;
+  }
+  .modal-wrapper {
+    align-items: center;
+    background: #0e0e0ef5;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+
+    .modal-body {
+      background-color: white;
+      border-radius: 10px;
+      padding: 2rem;
+
+      &.center {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        .trophy {
+          border: solid;
+          border-radius: 10px;
+          border-width: 1px;
+          display: flex;
+          flex-direction: column;
+          width: 60%;
+          -webkit-box-shadow: -6px 7px 5px 2px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: -6px 7px 5px 2px rgba(0, 0, 0, 0.75);
+          box-shadow: -6px 7px 5px 2px rgba(0, 0, 0, 0.75);
+          img {
+            width: 30%;
+          }
+
+          &--principal {
+            display: flex;
+            justify-content: center;
+            padding-top: 1rem;
+          }
+          &--pokemon {
+            display: flex;
+            justify-content: center;
+          }
+        }
+        .img {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          button {
+            font-family: 'Press Start 2P', cursive;
+            background: linear-gradient(to bottom, #eaa821 5%, #eaa821 100%);
+            color: #1d1d1d;
+            cursor: pointer;
+            font-size: 1em;
+            padding: 1.5rem;
+            border: 0;
+            transition: all 0.5s;
+            border-radius: 10px;
+            width: auto;
+            position: relative;
+            min-width: 250px;
+            margin: 1rem;
+            border: solid;
+            border-color: black;
+            &::after {
+              font-family: 'Font Awesome 5 Pro';
+              font-weight: 400;
+              position: absolute;
+              left: 80%;
+              top: 54%;
+              right: 0;
+              bottom: 0;
+              opacity: 0;
+              transform: translate(-50%, -50%);
+            }
+
+            &:hover {
+              background: #b1b1bb;
+              transition: all 0.5s;
+              border-radius: 10px;
+              box-shadow: 0px 6px 15px #0000ff61;
+              padding: 1.5rem 3rem 1.5rem 1.5rem;
+              color: #ffffff;
+
+              &::after {
+                opacity: 1;
+                transition: all 0.5s;
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

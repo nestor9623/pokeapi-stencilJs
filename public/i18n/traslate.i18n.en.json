@@ -1,0 +1,20 @@
+{
+  "title": "My Cool Component",
+  "subTitle": "This is the bees knees 🐝",
+  "listTitle": "Pokemon List",
+  "language" : "Select language",
+  "temeTitle" : "Select theme",
+  "battle": "Enter",
+  "marquePrincipalScreen": "Pokemon Battle",
+  "hp" : "HP",
+  "attack" : "Attack",
+  "defense" : "Defense",
+  "experience" : "Experience",
+  "weight" : "weight",
+  "height" : "height",
+  "fight" : "Fight",
+  "bag" : "Bag",
+  "pokemon" : "Pokémon",
+  "run" : "Run",
+  "toDo": "¿ You want to do?"
+}

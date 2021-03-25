@@ -1,0 +1,81 @@
+:host {
+  .principal__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    min-height: 50vh;
+  }
+  .principal-dark {
+    background: url('../../utils/images/fondo.jpg');
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    background-size: 100% 100%;
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f5df00;
+      padding: 5rem;
+    }
+
+    &__button {
+      .start-btn {
+        text-align: center;
+        display: inline-block;
+        margin: 5px;
+        font-weight: bold;
+        padding: 10px 10px 10px 10px;
+        background-color: lightgray;
+        text-shadow: -1px -1px black, 1px 1px white;
+        color: gray;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -o-border-radius: 7px;
+        border-radius: 7px;
+        box-shadow: 0 0.2em gray;
+        cursor: pointer;
+      }
+    }
+  }
+  .principal-light {
+    background: url('../../utils/images/fondo.jpg');
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    background-size: 100% 100%;
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffff;
+      padding: 5rem;
+    }
+
+    &__button {
+      .start-btn {
+        text-align: center;
+        display: inline-block;
+        margin: 5px;
+        font-weight: bold;
+        padding: 10px 10px 10px 10px;
+        background-color: #fff;
+        color: #000000;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -o-border-radius: 7px;
+        border-radius: 7px;
+        box-shadow: 0 0.2em gray;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "title": "マイクールコンポーネント",
+  "subTitle": "これはミツバチの膝です🐝",
+  "listTitle": "ポケモンリスト",
+  "language": "言語を選択する",
+  "temeTitle": "テーマを選択",
+  "battle": "入る",
+  "marquePrincipalScreen": "ポケモンバトル",
+  "hp" : "最大寿命",
+  "attack" : "攻撃",
+  "defense" : "防御",
+  "experience" : "経験",
+  "weight" : "重量",
+  "height" : "高さ",
+  "fight" : "喧嘩",
+  "bag" : "バッグ",
+  "pokemon" : "ポケットモンスター",
+  "run" : "走る",
+  "toDo" : "あなたがしたい"
+}

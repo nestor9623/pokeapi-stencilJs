@@ -1,0 +1,20 @@
+{
+  "title": "Mi gran componente",
+  "subTitle": "Esto es un avion 🐝",
+  "listTitle": "Lista de Pokemones",
+  "language" : "Seleccione el lenguage",
+  "temeTitle" : "Seleccione el tema",
+  "battle": "Entrar",
+  "marquePrincipalScreen": "Batalla Pokemon",
+  "hp" : "HP",
+  "attack" : "Ataque",
+  "defense" : "Defensa",
+  "experience" : "Experiencia",
+  "weight" : "Peso",
+  "height" : "Altura",
+  "fight" : "Pelear",
+  "bag" : "Bolsa",
+  "pokemon" : "Pokémon",
+  "run" : "Correr",
+  "toDo": "¿ Que quiere hacer ?"
+}

@@ -1,0 +1,49 @@
+:host {
+  display: block;
+
+  .header-principal {
+    h2 {
+      text-align: center;
+      color: white;
+    }
+  }
+
+  .principal {
+    background: url('../../utils/images/fondo.jpg') no-repeat;
+    height: 100%;
+    width: 100%;
+    // left: 0;
+    // top: 0;
+    overflow: hidden;
+    // position: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* <= This one */
+    background-size: 100% 100%;
+    a {
+      text-decoration: none;
+    }
+  }
+  .main-article {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    pokemon-card {
+      margin: 2rem;
+      flex-grow: 1;
+    }
+  }
+
+  @media (min-width: 400px) {
+    section h1 fa-icon {
+      display: inline;
+    }
+  }
+
+  @media (min-width: 768px) {
+    pokemon-card {
+      max-width: 16.5rem;
+    }
+  }
+}
